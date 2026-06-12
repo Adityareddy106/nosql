@@ -6,6 +6,7 @@ Two-step simulation:
 
 run_on_file() runs both steps internally.
 Output rows: {resource_path, request_count, total_bytes, hosts, distinct_host_count}
+key : ('/index.html', 'host1.com'), value : (1, 2048)
 """
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
