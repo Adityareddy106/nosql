@@ -1,6 +1,7 @@
 """
 MapReduce Job — Query 1: Daily Traffic Summary
 Output rows: {log_date, status_code, request_count, total_bytes}
+key: (record['log_date'], record['status_code']), value: (1, record['bytes_transferred'])
 """
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
