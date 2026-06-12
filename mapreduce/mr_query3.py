@@ -2,6 +2,7 @@
 MapReduce Job — Query 3: Hourly Error Analysis
 Output rows: {log_date, log_hour, error_request_count, total_request_count,
               error_rate, error_hosts, distinct_error_hosts}
+key: (record['log_date'], record['log_hour']) , value : (True, 'host1.com')
 """
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
